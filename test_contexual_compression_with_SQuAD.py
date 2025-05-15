@@ -221,7 +221,7 @@ def main():
     ces_metrics = []
     info_loss_metrics = []
 
-    max_workers = min(2, os.cpu_count() or 1)
+    max_workers = 1
     print(f"Processing {len(tasks)} questions with {max_workers} threads on {device}...")
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_task = {executor.submit(process_question, qa, context, qas, retriever, compression_retriever): qa
