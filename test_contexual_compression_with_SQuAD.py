@@ -22,7 +22,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCMhrggDcsDo7d7dRmDmppelr1D96kiXN4"
+
 
 # Load dataset from JSON file
 def load_json_dataset(filename="dev-v2.0.json"):
